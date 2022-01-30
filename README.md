@@ -13,3 +13,8 @@ producer gets data every 1 min from rtd denver, parses it, publishes each vehicl
 consumer gets vehicle id, position, and timestamp and compares against old cache and determines speed then publishes that to mqtt speed topic
 
 nodered consumes from mqtt speed topic and plots data to a map
+
+### screenshots
+![noderedflow](https://user-images.githubusercontent.com/38662926/151682996-52ee3b42-ba5b-4baa-9774-36323e1c6c6b.png)
+
+![noderedmap](https://user-images.githubusercontent.com/38662926/151682997-0fa6edeb-a0a2-4fd0-9385-cfadfafd495c.png)
