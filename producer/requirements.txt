@@ -1,0 +1,5 @@
+paho-mqtt
+apscheduler
+protobuf3-to-dict
+requests
+gtfs-realtime-bindings

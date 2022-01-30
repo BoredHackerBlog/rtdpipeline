@@ -1,0 +1,25 @@
+version: "3.9"
+
+services:
+  nodered:
+    image: nodered/node-red
+    ports:
+      - "1880:1880"
+    volumes:
+      - nodered-data:/data
+
+  mosquitto:
+    image: eclipse-mosquitto:1.6
+    ports:
+      - "1883:1883"
+
+  producer:
+    build: ./producer
+    image: producer
+
+  consumer:
+    build: ./consumer
+    image: consumer
+
+volumes:
+    nodered-data:
